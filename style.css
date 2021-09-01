@@ -118,6 +118,11 @@ button {
     font-weight: bold;
 }
 
+li {
+    display: inline-flex;
+    margin: 2rem;
+}
+
 
 /* a article button :hover {
     transform: scale(1.05);

@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const url = "https://kea-alt-del.dk/t7/api/brands";
 
 fetch(url)
     .then(function(res) {
@@ -20,7 +20,7 @@ function showBrand(product) {
     //clone it
     const copy = template.cloneNode(true);
     copy.querySelector("li").textContent = `${product.brandname}`;
-    copy.querySelector("a").setAttribute("href", "product_list.html?id=" + product.id);
+    copy.querySelector("a").setAttribute("href", "product_list.html?brandname=" + product.brandname);
     const parent = document.querySelector("main");
     //append}
     parent.appendChild(copy);

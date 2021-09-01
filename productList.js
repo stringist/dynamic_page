@@ -1,4 +1,6 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const urlParams = new URLSearchParams(window.location.search);
+const brandname = urlParams.get("brandname");
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
 
 fetch(url)
     .then(function(res) {
@@ -37,20 +39,4 @@ function showProduct(product) {
     const parent = document.querySelector("main");
     //append}
     parent.appendChild(copy);
-}
-
-
-
-{
-    /* <article class="productCard">
-                    <h2>product name</h2>
-                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="shirt" />
-                    <p class="greyed">sub-category | brand</p>
-                    <p class="price"><span>Prev.</span> DKK 5000,-</p>
-                    <div class="onSale">
-                        <p>Now: DKK 4000,-</p>
-                        <p>-34%</p>
-                    </div>
-                    <button>View</button>
-                </article> */
 }
