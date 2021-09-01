@@ -14,6 +14,7 @@ function handleProductList(data) {
 }
 
 function showProduct(product) {
+    console.log(product);
     //grab template
     const template = document.querySelector("#productCardTemplate").content;
     //clone it
