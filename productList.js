@@ -20,12 +20,20 @@ function showProduct(product) {
     //clone it
     const copy = template.cloneNode(true);
     //change content
-
+    //soldOut or discount
+    if (product.soldout) {
+        copy.querySelector("article").classList.add("soldOut")
+    }
+    if (product.discount) {
+        copy.querySelector("article").classList.add("onSale")
+    }
     //grab parent
     const parent = document.querySelector("main");
     //append}
     parent.appendChild(copy);
 }
+
+
 
 /* <template id="productCardTemplate"><a href="product_page.html?id=">
         <article>
