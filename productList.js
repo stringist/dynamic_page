@@ -20,6 +20,9 @@ function showProduct(product) {
     //clone it
     const copy = template.cloneNode(true);
     //change content
+    copy.querySelector("h2").textContent = `${product.productdisplayname}`;
+    copy.querySelector(".greyed").textContent = `${product.articletype} | ${product.brandname}`;
+    copy.querySelector(".price").textContent = `DKK ${product.price}`;
     //soldOut or discount
     if (product.soldout) {
         copy.querySelector("article").classList.add("soldOut")
@@ -35,16 +38,16 @@ function showProduct(product) {
 
 
 
-/* <template id="productCardTemplate"><a href="product_page.html?id=">
-        <article>
-          <h1>product name</h1>
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-            alt="shirt"/>
-          <p>
-            description
-          </p>
-          <h2><span>price</span>dkk</h2>
-          <button>View</button>
-        </article>
-      </a></template> */
+{
+    /* <article class="productCard">
+                    <h2>product name</h2>
+                    <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="shirt" />
+                    <p class="greyed">sub-category | brand</p>
+                    <p class="price"><span>Prev.</span> DKK 5000,-</p>
+                    <div class="onSale">
+                        <p>Now: DKK 4000,-</p>
+                        <p>-34%</p>
+                    </div>
+                    <button>View</button>
+                </article> */
+}

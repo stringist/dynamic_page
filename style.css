@@ -59,6 +59,10 @@ article>* {
     margin-top: auto;
 }
 
+article>img {
+    order: -1;
+}
+
 .greyed {
     color: rgb(145, 145, 145);
     font-weight: 100;
