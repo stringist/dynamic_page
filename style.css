@@ -116,6 +116,13 @@ button {
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
+    transition: all .1s ease-in;
+}
+
+button:hover {
+    transform: scale(1.02);
+    filter: brightness(130%);
+    translate: 3vw, 0vw;
 }
 
 li {

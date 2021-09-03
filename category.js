@@ -10,17 +10,21 @@ fetch(url)
 
 function handleBrandsList(data) {
     //   console.log(data);
-    data.forEach(showBrand);
+    const newData = data.map(el => el.brandname)
+    console.log(data)
+    console.log(newData)
+    newData.sort()
+    newData.forEach(showBrand);
 }
 
-function showBrand(product) {
-    console.log(product);
+function showBrand(brand) {
+    console.log(brand);
     //grab template
     const template = document.querySelector("#brandName").content;
     //clone it
     const copy = template.cloneNode(true);
-    copy.querySelector("li").textContent = `${product.brandname}`;
-    copy.querySelector("a").setAttribute("href", "product_list.html?brandname=" + product.brandname);
+    copy.querySelector("li").textContent = `${brand}`;
+    copy.querySelector("a").setAttribute("href", "product_list.html?brandname=" + brand);
     const parent = document.querySelector("main");
     //append}
     parent.appendChild(copy);
