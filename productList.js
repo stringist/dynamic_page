@@ -33,6 +33,10 @@ function showProduct(product) {
         copy.querySelector("article").classList.add("soldOut")
     }
     if (product.discount) {
+        const price = 100
+        const discount = 10;
+        const percentage = discount / 100;
+        const newPrice = price - (price * percentage)
         copy.querySelector("article").classList.add("onSale")
     }
     //grab parent
