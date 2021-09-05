@@ -37,6 +37,7 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .brands_list a {
@@ -99,6 +100,7 @@ article>div {
 
 .onSale :first-child {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .onSale :last-child {
@@ -108,10 +110,12 @@ article>div {
     padding: .5rem;
     margin-right: 1.5rem;
     margin-bottom: 1rem;
+    margin-top: -1.5rem;
 }
 
 article>img {
-    max-width: 100%;
+    max-width: 95%;
+    margin: 0 0 0 2rem;
 }
 
 .product_detail {
@@ -125,7 +129,8 @@ article>img {
 button {
     width: 80%;
     color: white;
-    background-color: rgba(0, 66, 209, 0.89);
+    /* background-color: rgba(0, 66, 209, 0.89); */
+    background-color: rgba(44, 68, 119, 0.89);
     border: 0px solid;
     border-radius: 2rem;
     box-shadow: .3rem .3rem 1rem rgba(104, 104, 104, 0.479);
