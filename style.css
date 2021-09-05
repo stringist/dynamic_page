@@ -1,11 +1,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+main {
     padding: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -14,13 +14,18 @@ ul {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 140, 255, 0.555);
+    justify-content: flex-end;
+    /* background-color: rgba(0, 140, 255, 0.555); */
+    border-bottom: solid 1px black;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+h1 {
+    margin: 2rem;
 }
 
 h2 {
@@ -128,6 +133,14 @@ button:hover {
 li {
     display: inline-flex;
     margin: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all .2s;
+}
+
+li:hover {
+    transform: scale(1.1);
+    color: cornflowerblue;
 }
 
 
