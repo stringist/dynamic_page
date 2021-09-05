@@ -34,11 +34,14 @@ function showProduct(product) {
     }
 
     if (product.discount) {
-        const price = 100
-        const discount = 10;
+        const price = `${product.price}`;
+        const discount = `${product.discount}`;
         const percentage = discount / 100;
         const newPrice = price - (price * percentage)
         copy.querySelector("article div").classList.add("onSale");
+        copy.querySelector(".onSale :first-child").textContent = `DKK
+        ${Math.floor(newPrice)}`;
+        copy.querySelector(".onSale :last-child").textContent = `${Math.floor(percentage * 100)}%`;
 
     }
     const parent = document.querySelector("main");
