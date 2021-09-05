@@ -12,11 +12,16 @@ ul {
     list-style: none;
 }
 
-nav ul {
+nav>ul {
     display: flex;
     justify-content: flex-end;
     /* background-color: rgba(0, 140, 255, 0.555); */
     border-bottom: solid 1px black;
+}
+
+nav ul li {
+    font-size: 1.6rem;
+    color: rgb(54, 54, 54);
 }
 
 a {
@@ -26,6 +31,7 @@ a {
 
 h1 {
     margin: 2rem;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -42,6 +48,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1.5rem;
+    margin-top: 4rem;
     margin-right: 5rem;
     margin-left: 5rem;
 }
@@ -133,7 +140,7 @@ button:hover {
 li {
     display: inline-flex;
     margin: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.2rem;
     transition: all .2s;
 }

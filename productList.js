@@ -43,4 +43,5 @@ function showProduct(product) {
     const parent = document.querySelector("main");
     //append}
     parent.appendChild(copy);
+    document.querySelector("h1").textContent = `Products by ${product.brandname}`;
 }
